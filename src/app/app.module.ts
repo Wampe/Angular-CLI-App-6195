@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { SampleModule } from '@wampe/lib-6195';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+		BrowserModule,
+		SampleModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
